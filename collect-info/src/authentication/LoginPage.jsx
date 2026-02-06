@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 import InputLabel from "@mui/material/InputLabel";
 import Input from "@mui/material/Input";
-import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
 
 function LoginPage() {
