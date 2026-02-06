@@ -10,7 +10,6 @@ import TableBody from "@mui/material/TableBody";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import './FormStyles.css';
-import {v4 as uuid} from 'uuid';
 
 function UserDetailsDisplay() {
     const selectors = useSelector(state => state.form.users);
@@ -40,10 +39,10 @@ function UserDetailsDisplay() {
 
                     <TableBody>
                         {
-                            selectors.map((item,index) => {
-                                return <TableRow key={item.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}  
-                                        >
-                                    <TableCell>{index+1}</TableCell>
+                            selectors.map((item, index) => {
+                                return <TableRow key={item.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <TableCell>{index + 1}</TableCell>
                                     <TableCell component="th" scope="row">{item.name}</TableCell>
                                     <TableCell align="right">{item.email}</TableCell>
                                     <TableCell align="right">{item.age}</TableCell>
